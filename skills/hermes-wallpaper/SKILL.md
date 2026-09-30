@@ -107,7 +107,7 @@ avi + audio). Images get a 415 there — hence the data-URL route.
   `{ title, description }`.
 - WE is driven only through its documented CLI
   (`wallpaper64.exe -control <action>`), never by editing its config. Scanning
-  and control are verified working on this machine (WE 2.8.42).
+  and control are verified working against Wallpaper Engine 2.8.42.
 
 ## B-tier extension point
 

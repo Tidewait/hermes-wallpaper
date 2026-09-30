@@ -35,14 +35,16 @@ Wallpaper Engine ──► plugin backend ──► desktop background layer
 ## Install
 
 ```bash
-# into your Hermes home
+# clone into your Hermes plugins folder (default ~/.hermes/plugins/)
 git clone https://github.com/<you>/hermes-wallpaper.git \
-  "$(hermes home 2>/dev/null || echo ~/.hermes)/plugins/hermes-wallpaper"
+  "${HERMES_HOME:-$HOME/.hermes}/plugins/hermes-wallpaper"
+
 hermes plugins enable hermes-wallpaper
 ```
 
 Then restart `hermes serve` — plugin API routes are mounted at process start.
-The desktop half hot-reloads; the backend half does not.
+The desktop half hot-reloads; the backend half does not, so a config-field change
+to `plugin_api.py` is invisible until that restart happens.
 
 ## Settings
 

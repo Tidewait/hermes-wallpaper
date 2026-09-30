@@ -1,0 +1,8 @@
+{
+  "name": "hermes-wallpaper",
+  "label": "Wallpaper Engine",
+  "description": "Wallpaper Engine library as the Hermes Desktop background: video and image wallpapers render behind the chat with translucent surfaces, scene/web wallpapers use their preview art. Ships agent tools to scan, list, set and control Wallpaper Engine.",
+  "icon": "image",
+  "version": "0.1.0",
+  "api": "plugin_api.py"
+}

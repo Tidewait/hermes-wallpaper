@@ -1,0 +1,13 @@
+name: hermes-wallpaper
+version: 0.1.0
+description: "Wallpaper Engine as the Hermes Desktop background: scans your Steam workshop library (video/image render live, scene/web use preview art), renders it behind the chat with translucent surfaces and a readability scrim, and exposes agent tools to scan, list, set and control Wallpaper Engine. Read-only over workshop content; the only writes are this plugin's own config."
+author: hermes-agent
+kind: standalone
+requires_hermes: ">=0.19"
+platforms: []
+provides_tools:
+  - wallpaper_scan
+  - wallpaper_list
+  - wallpaper_set
+  - wallpaper_config
+  - wallpaper_we_control
